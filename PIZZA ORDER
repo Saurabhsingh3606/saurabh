@@ -1,0 +1,19 @@
+print("Welcome to Btech Pizza Deliveries!")
+size=input("Enter a size you want to order: S, M, L! ")
+add_pepperone=input("DO you want to add pepparone? Y or N")
+extra_cheese=input("Do you want add extra cheese to you pizaa: Y or N")
+bill=0
+if size== "S":
+  bill+=15
+elif size=="M":
+  bill+=20
+else:
+  bill+=25
+if add_pepperone=="Y":
+  if size=="S":
+    bill+=2
+  else:
+    bill+=3
+if extra_cheese=="Y":
+  bill+=1
+print(f"you final bill is ${bill}")
