@@ -1,0 +1,33 @@
+print("Welcome to Love Calculator!")
+a=input("Enter your name: ")
+b=input("Enter your partner's name: ")
+c=a+b
+d=c.count("t")
+print("t occurs" ,d, "times")
+e=c.count("r")
+print("r occurs" ,e, "times")
+f=c.count("u")
+print("u occurs" ,f, "times")
+g=c.count("e")
+print("e occurs" ,g, "times")
+print("total =", d+e+f+g)
+h=c.count("l")
+print("l occurs" ,h, "times")
+i=c.count("o")
+print("o occurs" ,i, "times")
+j=c.count("v")
+print("v occurs" ,j, "times")
+k=c.count("e")
+print("e occurs" ,k, "times")
+print("total =", h+i+j+k)
+x=str(d+e+f+g)
+y=str(h+i+j+k)
+z=x+y
+print("Love Score =",z)
+z=int(z)
+if (z<10) or (z>90):
+  print(f"Ypur score is {z}, you go together like coke and mentos.")
+elif (z>=40) and (z<=50):
+  print(f"Your score is {z}, you are alright together.")
+else:
+  print(f"Your score is {z}.")
